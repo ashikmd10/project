@@ -1,0 +1,324 @@
+package calculator;
+public class Clac extends javax.swing.JFrame 
+{
+       private void groupButton(){
+        ButtonGroup ob=new ButtonGroup();
+        
+        ob.add(btnADD); 
+        ob.add(btnSUBS);
+        ob.add(btnMUL);
+        ob.add(btnDIV);
+        
+    }
+    
+    public Clac() 
+    {
+        initComponents();
+    }
+
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        jLabel1 = new javax.swing.JLabel();
+        btnADD = new javax.swing.JRadioButton();
+        btnSUBS = new javax.swing.JRadioButton();
+        btnMUL = new javax.swing.JRadioButton();
+        btnDIV = new javax.swing.JRadioButton();
+        txt1 = new javax.swing.JTextField();
+        txt2 = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        shw = new javax.swing.JLabel();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Ashik Mahmud ID:143311007");
+        setAlwaysOnTop(true);
+        setBackground(java.awt.Color.black);
+        setBounds(new java.awt.Rectangle(0, 0, 0, 0));
+        setForeground(java.awt.Color.orange);
+        setMaximizedBounds(new java.awt.Rectangle(0, 0, 400, 500));
+        setResizable(false);
+
+        jLabel1.setFont(new java.awt.Font("Bangers", 1, 48)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 102, 102));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("The Calculator");
+        jLabel1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+
+        buttonGroup1.add(btnADD);
+        btnADD.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        btnADD.setForeground(new java.awt.Color(36, 160, 61));
+        btnADD.setText("ADDITION");
+        btnADD.setToolTipText("Additions values of the box");
+        btnADD.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, null, new java.awt.Color(204, 204, 204), null, null));
+        btnADD.setBorderPainted(true);
+        btnADD.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnADDActionPerformed(evt);
+            }
+        });
+
+        buttonGroup1.add(btnSUBS);
+        btnSUBS.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        btnSUBS.setForeground(new java.awt.Color(190, 31, 60));
+        btnSUBS.setText("SUBSTRACTION");
+        btnSUBS.setToolTipText("Substracts values of the box");
+        btnSUBS.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED));
+        btnSUBS.setBorderPainted(true);
+        btnSUBS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnSUBSActionPerformed(evt);
+            }
+        });
+
+        buttonGroup1.add(btnMUL);
+        btnMUL.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        btnMUL.setForeground(new java.awt.Color(47, 79, 30));
+        btnMUL.setText("MULTIPLICATION");
+        btnMUL.setToolTipText("Multiplys values of the box");
+        btnMUL.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, null, new java.awt.Color(204, 204, 204), null, null));
+        btnMUL.setBorderPainted(true);
+        btnMUL.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnMULActionPerformed(evt);
+            }
+        });
+
+        buttonGroup1.add(btnDIV);
+        btnDIV.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        btnDIV.setForeground(new java.awt.Color(229, 2, 36));
+        btnDIV.setText("DIVISION");
+        btnDIV.setToolTipText("Divides values of the box");
+        btnDIV.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.LOWERED, null, new java.awt.Color(204, 204, 204), null, null));
+        btnDIV.setBorderPainted(true);
+        btnDIV.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDIVActionPerformed(evt);
+            }
+        });
+
+        txt1.setBackground(new java.awt.Color(182, 218, 218));
+        txt1.setFont(new java.awt.Font("Lucida Console", 1, 24)); // NOI18N
+        txt1.setForeground(new java.awt.Color(102, 102, 102));
+        txt1.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt1.setToolTipText("Insert First Value to calculate (Must be Float or Interger)");
+        txt1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt1ActionPerformed(evt);
+            }
+        });
+
+        txt2.setBackground(new java.awt.Color(182, 218, 218));
+        txt2.setFont(new java.awt.Font("Lucida Console", 1, 24)); // NOI18N
+        txt2.setForeground(new java.awt.Color(102, 102, 102));
+        txt2.setHorizontalAlignment(javax.swing.JTextField.CENTER);
+        txt2.setToolTipText("Insert First Value to calculate (Must be Float or Interger)");
+        txt2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txt2ActionPerformed(evt);
+            }
+        });
+
+        jButton1.setBackground(new java.awt.Color(204, 255, 255));
+        jButton1.setFont(new java.awt.Font("Ubuntu", 1, 36)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 102, 102));
+        jButton1.setText(" =");
+        jButton1.setToolTipText("Click to calculate the values");
+        jButton1.setBorder(javax.swing.BorderFactory.createEtchedBorder(javax.swing.border.EtchedBorder.RAISED));
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jLabel2.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(86, 137, 137));
+        jLabel2.setText("VALUE ONE");
+
+        jLabel3.setFont(new java.awt.Font("Ubuntu", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(86, 137, 137));
+        jLabel3.setText("VALUE TWO");
+
+        shw.setBackground(new java.awt.Color(204, 255, 255));
+        shw.setFont(new java.awt.Font("Courier New", 1, 80)); // NOI18N
+        shw.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        shw.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, new java.awt.Color(51, 255, 0), new java.awt.Color(255, 153, 0), new java.awt.Color(153, 0, 255), new java.awt.Color(255, 51, 0)));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(51, 51, 51)
+                .addComponent(jLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel3)
+                .addGap(51, 51, 51))
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(btnADD)
+                                    .addComponent(btnMUL, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addComponent(txt1))
+                                .addGap(25, 25, 25)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(btnSUBS, javax.swing.GroupLayout.Alignment.TRAILING)
+                                        .addComponent(btnDIV))
+                                    .addComponent(txt2, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(shw, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(76, 76, 76)
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 161, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(28, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(jLabel1)
+                .addGap(22, 22, 22)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(jLabel2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txt1, javax.swing.GroupLayout.DEFAULT_SIZE, 48, Short.MAX_VALUE)
+                    .addComponent(txt2))
+                .addGap(49, 49, 49)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnADD)
+                    .addComponent(btnSUBS))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnMUL)
+                    .addComponent(btnDIV))
+                .addGap(25, 25, 25)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(shw, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(13, Short.MAX_VALUE))
+        );
+
+        pack();
+    }// </editor-fold>//GEN-END:initComponents
+
+    private void btnADDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnADDActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnADDActionPerformed
+
+    private void btnDIVActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDIVActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnDIVActionPerformed
+
+    private void btnMULActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMULActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnMULActionPerformed
+
+    private void txt1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt1ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        double num1=Double.parseDouble(txt1.getText());
+        double num2=Double.parseDouble(txt2.getText());
+        String Result = null;
+        String radioText="";
+        
+        if (btnADD.isSelected())
+        {
+           double total=num1+num2;
+           Result =String.valueOf(total); 
+        }
+        
+        if (btnSUBS.isSelected())
+        {
+            double total=num1-num2;
+            Result =String.valueOf(total);
+        }
+        
+           if (btnMUL.isSelected())
+        {
+            double total=num1*num2;
+            Result =String.valueOf(total);
+        }
+           
+        if (btnDIV.isSelected())
+        {
+           if(num2==0) throw new ArithmeticException();
+            double total=num1/num2;
+            Result =String.valueOf(total);
+        }
+        
+        
+        shw.setText(Result);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txt2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txt2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txt2ActionPerformed
+
+    private void btnSUBSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSUBSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnSUBSActionPerformed
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String args[]) {
+        /* Set the Nimbus look and feel */
+        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
+        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
+         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
+         */
+        try {
+            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
+                    break;
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            java.util.logging.Logger.getLogger(Clac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (InstantiationException ex) {
+            java.util.logging.Logger.getLogger(Clac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Clac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
+            java.util.logging.Logger.getLogger(Clac.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        }
+        //</editor-fold>
+
+        /* Create and display the form */
+        java.awt.EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                new Clac().setVisible(true);
+            }
+        });
+    }
+
+    // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JRadioButton btnADD;
+    private javax.swing.JRadioButton btnDIV;
+    private javax.swing.JRadioButton btnMUL;
+    private javax.swing.JRadioButton btnSUBS;
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel shw;
+    private javax.swing.JTextField txt1;
+    private javax.swing.JTextField txt2;
+    // End of variables declaration//GEN-END:variables
+}
